@@ -5,6 +5,7 @@ export const experiences = defineType({
     name:'experiences',
     title:'Experiences',
     type: 'document',
+    
     fields: [
         defineField({
             name:'year',
