@@ -7,14 +7,16 @@ import { testimonials } from "./testimonials"
 import { workExperience } from "./workExperience"
 import { works } from "./works"
 import { experiences } from "./experiences"
+import { post } from "./post"
 
 export const schemaTypes = [
     aboutMe,
-    abouts, 
-    brands, 
-    contact, 
-    skills, 
+    abouts,
+    brands,
+    contact,
+    skills,
     testimonials,
-    workExperience, 
-    works, experiences
+    workExperience,
+    works, experiences,
+    post,
 ]

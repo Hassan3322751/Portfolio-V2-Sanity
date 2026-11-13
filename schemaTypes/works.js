@@ -36,11 +36,23 @@ import {defineField, defineType} from 'sanity'
       defineField({
         name: 'tags',
         title: 'Tags',
+        type:'array',
+        of: [
+          {
+            name:'tag',
+            title:'Tag',
+            type:'string'
+          }
+        ]
+      }),
+      defineField({
+        name: 'tab',
+        title: 'Tab',
        type:'array',
        of: [
          {
-           name:'tag',
-           title:'Tag',
+           name:'tab',
+           title:'Tab',
            type:'string'
          }
        ]

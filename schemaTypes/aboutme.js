@@ -26,6 +26,18 @@ export const aboutMe = defineType({
         accept: "application/pdf",
       },
     }),
+    defineField({
+        name: 'tags',
+        title: 'Tags',
+        type:'array',
+        of: [
+          {
+            name:'tag',
+            title:'Tag',
+            type:'string'
+          }
+        ]
+      }),
   ],
 }
 )
