@@ -46,6 +46,40 @@ import {defineField, defineType} from 'sanity'
         ]
       }),
       defineField({
+        name: 'summary',
+        title: 'Summary',
+        description: 'One or two sentences shown at the top of the project dialog.',
+        type: 'text',
+        rows: 3,
+      }),
+      defineField({
+        name: 'challenge',
+        title: 'The challenge',
+        description: 'The hardest real problem in this project.',
+        type: 'text',
+        rows: 4,
+      }),
+      defineField({
+        name: 'solution',
+        title: 'How it was solved',
+        type: 'text',
+        rows: 4,
+      }),
+      defineField({
+        name: 'highlights',
+        title: 'What makes it work well',
+        description: 'Short bullets about features that were complex or smooth.',
+        type: 'array',
+        of: [{type: 'string'}],
+      }),
+      defineField({
+        name: 'stack',
+        title: 'Tech stack',
+        type: 'array',
+        of: [{type: 'string'}],
+        options: {layout: 'tags'},
+      }),
+      defineField({
         name: 'tab',
         title: 'Tab',
        type:'array',
